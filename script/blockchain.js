@@ -2,12 +2,19 @@ const valorAtual = document.querySelector("#valorAtual");
 const valorAnterior = document.querySelector("#valorAnterior");
 
 function atribuirDados(data) {
-  valorAtual.innerText = data.BRL.buy;
-  valorAnterior.innerText = data.BRL.last;
+  valorAtual.innerText = "R$ " + data.BRL.buy;
+  valorAnterior.innerText = "R$ " + data.BRL.last;
 }
 
-fetch("https://blockchain.info/ticker")
-  .then((response) => {
-    return response.json;
-  })
-  .then((data) => console.log(data));
+function fetchBtc() {
+  fetch("https://blockchain.info/ticker")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      atribuirDados(data);
+    });
+}
+
+fetchBtc();
+
+setInterval(fetchBtc, 30000);
