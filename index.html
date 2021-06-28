@@ -1,32 +1,101 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equi v="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API | Lobby</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="shortcut icon" href="./assets/fav/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equi v="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fetch API | Lobby</title>
-  <link rel="stylesheet" href="./style/style.css" />
-  <link rel="shortcut icon" href="./assets/fav/favicon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <header>
-    <div class="header-logo-container"><img src="./assets/img/header_logo.svg" alt="" class="header-logo"></div>
-    <nav id="navBar">
-      <a href="#">Home</a>
-      <a href="#">Cep</a>
-      <a href="#">Norris</a>
-      <a href="#">Bitcoin</a>
-      <a href="#">Sobre</a>
-    </nav>
-    <i class="fa fa-bars" class="bassb" id="hamburguerBtn"></i>
-  </header>
-  <script src="./script/main.js" type="module"></script>
-</body>
-
+  <body>
+    <header class="fixed-menu">
+      <div class="header-logo-container">
+        <img src="./assets/img/header_logo.svg" alt="" class="header-logo" />
+      </div>
+      <nav id="navBar">
+        <a href="#">Home</a>
+        <a href="#">Cep</a>
+        <a href="#">Norris</a>
+        <a href="#">Bitcoin</a>
+        <a href="#">Sobre</a>
+      </nav>
+      <i class="fa fa-bars" class="bassb" id="hamburguerBtn"></i>
+    </header>
+    <main>
+      <div class="main-box1">
+        <h1 class="titulo-main">{FETCH}</h1>
+        <h2 class="subtitulo-main">API</h2>
+        <h2 class="subtitulo-main">LOBBY</h2>
+      </div>
+      <div class="main-box2">
+        <a href="#">FERRAMENTAS</a>
+        <a href="#">SOBRE</a>
+      </div>
+    </main>
+    <section class="sec-ferramentas">
+      <div class="container-tools">
+        <h2 class="ferramentas-titulo">Ferramentas</h2>
+        <div class="container">
+          <div class="card">
+            <div class="circle">
+              <h2>Cep</h2>
+            </div>
+            <div class="content">
+              <p class="content-p">
+                Ferramenta feita utilizando a API da plataforma Viacep, através
+                dela é possível obter dados a partir de um endereço CEP.
+              </p>
+              <a href="#">Utilizar</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="circle"><h2>Bitcoin</h2></div>
+            <div class="content">
+              <p>
+                Ferramenta feita utilizando a API da plataforma Blockchain. A
+                partir dessa ferramenta é possível visualizar o preço atual e
+                anterior da moeda.
+              </p>
+              <a href="#">Utilizar</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="circle"><h2>Chuck</h2></div>
+            <div class="content">
+              <p>
+                Através dessa ferramenta utilizando um API, é possível gerar
+                frases aleatórias do Chuck Norris.
+              </p>
+              <a href="#">Utilizar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./script/main.js" type="module"></script>
+  </body>
 </html>

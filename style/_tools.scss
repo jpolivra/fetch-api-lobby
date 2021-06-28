@@ -1,0 +1,88 @@
+section.sec-ferramentas {
+  max-width: 100%;
+  div.container-tools {
+    padding-top: 40px;
+    max-width: 100%;
+    background-color: #f7df1e;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    h2.ferramentas-titulo {
+      font-family: "Bebas Neue", cursive;
+      letter-spacing: 0.2em;
+      font-size: 52px;
+    }
+    div.container {
+      position: relative;
+      //width: 1150px;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      div.card {
+        position: relative;
+        width: 300px;
+        height: 420px;
+        background-color: #fff;
+        margin: 20px;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+        div.circle {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          background: #000;
+          clip-path: circle(180px at center 0);
+          text-align: center;
+          h2 {
+            color: #fff;
+            font-family: "Bebas Neue", cursive;
+            font-size: 3.5em;
+            padding: 30px 0;
+          }
+        }
+        div.content {
+          position: absolute;
+          bottom: 10px;
+          padding: 20px;
+          text-align: center;
+          p {
+            color: #666;
+            font-size: 20px;
+
+            line-height: 1.5em;
+            font-family: "Bebas Neue", cursive;
+          }
+          a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            background: #000;
+            color: #fff;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+          }
+        }
+      }
+      &:hover div.card {
+        filter: blur(20px);
+        transform: scale(0.9);
+        opacity: 0.5;
+      }
+      div.card:hover {
+        filter: blur(0px);
+        transform: scale(1.1);
+        opacity: 1;
+      }
+    }
+  }
+}

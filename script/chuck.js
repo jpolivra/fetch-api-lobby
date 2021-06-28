@@ -15,3 +15,4 @@ function randomQuote() {
 randomQuote();
 
 botao.addEventListener("click", randomQuote);
+("");
