@@ -86,3 +86,16 @@ section.sec-ferramentas {
     }
   }
 }
+
+@media (max-width: 400px) {
+  section.sec-ferramentas {
+    div.container-tools {
+      h2.ferramentas-titulo {
+        font-size: 44px;
+      }
+      div.container {
+        max-width: 100%;
+      }
+    }
+  }
+}

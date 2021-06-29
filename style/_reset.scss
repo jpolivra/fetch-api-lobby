@@ -1,14 +1,19 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 body {
-    background: #000;
+  background: #000;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
