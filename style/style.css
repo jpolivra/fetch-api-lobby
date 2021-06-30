@@ -44,6 +44,10 @@ header nav a {
   letter-spacing: 0.2em;
   color: #f7df1e;
   font-weight: 400;
+  transition: 0.3s;
+}
+header nav a:hover {
+  transform: scale(1.1);
 }
 
 i.fa {
@@ -61,7 +65,18 @@ i.fa:hover {
     position: relative;
   }
   header nav {
-    display: none;
+    position: absolute;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f7df1e;
+    top: 0;
+    left: -100vw;
+    width: 100%;
+    transition: 0.3s;
   }
   header nav.ativo {
     position: absolute;
@@ -137,6 +152,10 @@ main div.main-box2 a {
   font-size: 36px;
   padding: 10px 20px;
   text-decoration: none;
+  transition: 0.3s;
+}
+main div.main-box2 a:hover {
+  transform: scale(1.1);
 }
 
 /* Main Responsivo */
@@ -186,7 +205,6 @@ section.sec-ferramentas div.container-tools {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
 }
 section.sec-ferramentas div.container-tools h2.ferramentas-titulo {
   font-family: "Bebas Neue", cursive;
@@ -195,6 +213,7 @@ section.sec-ferramentas div.container-tools h2.ferramentas-titulo {
 }
 section.sec-ferramentas div.container-tools div.container {
   position: relative;
+  flex-grow: 1;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -250,16 +269,16 @@ section.sec-ferramentas div.container-tools div.container div.card div.content a
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: 20px;
+  transition: 0.3s;
+}
+section.sec-ferramentas div.container-tools div.container div.card div.content a:hover {
+  transform: scale(1.1);
 }
 section.sec-ferramentas div.container-tools div.container:hover div.card {
-  filter: blur(20px);
   transform: scale(0.9);
-  opacity: 0.5;
 }
 section.sec-ferramentas div.container-tools div.container div.card:hover {
-  filter: blur(0px);
   transform: scale(1.1);
-  opacity: 1;
 }
 
 @media (max-width: 400px) {
@@ -267,6 +286,125 @@ section.sec-ferramentas div.container-tools div.container div.card:hover {
     font-size: 44px;
   }
   section.sec-ferramentas div.container-tools div.container {
+    max-width: 100%;
+  }
+  section.sec-ferramentas div.container-tools div.container div.card div.content p {
+    font-size: 18px;
+  }
+}
+section.cep-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+section.cep-section div {
+  padding: 40px 20px 40px 20px;
+}
+section.cep-section div.cep-box1 {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: space-around;
+}
+section.cep-section div.cep-box1 h2.cep-titulo {
+  color: #f7df1e;
+  font-family: "Bebas Neue", cursive;
+  font-size: 96px;
+  line-height: 1em;
+}
+section.cep-section div.cep-box1 input.cep-placeholder {
+  display: block;
+  padding: 10px 3px;
+  width: 300px;
+  font-size: 44px;
+  background-color: transparent;
+  border: 3px solid #f7df1e;
+  color: #f7df1e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+section.cep-section div.cep-box1 button.buscar-cep {
+  background: #f7df1e;
+  border: none;
+  width: 300px;
+  font-size: 44px;
+  font-family: "Bebas Neue", cursive;
+  padding: 20px;
+  transition: 0.3s;
+}
+section.cep-section div.cep-box1 button.buscar-cep:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+section.cep-section div.cep-box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.cep-section div.cep-box2 div.cep-card {
+  background: #fff;
+  border-radius: 8px;
+  width: 300px;
+  display: flex;
+  min-height: 30vh;
+  justify-content: flex-start;
+  align-content: space-around;
+}
+section.cep-section div.cep-box2 div.cep-card ul {
+  display: block;
+  list-style-type: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 22px;
+}
+section.cep-section div.cep-box2 div.cep-card ul li {
+  margin-top: 10px;
+}
+section.cep-section div.cep-box2 div.cep-card ul span {
+  color: #666;
+}
+section.cep-section div.cep-box2 div.cep-card svg.fa-w-18 {
+  color: #000;
+  max-width: 100px;
+  display: none;
+}
+section.cep-section div.cep-box2 div.cep-card.ativo {
+  justify-content: center;
+  align-items: center;
+}
+section.cep-section div.cep-box2 div.cep-card.ativo ul {
+  display: none;
+}
+section.cep-section div.cep-box2 div.cep-card.ativo svg.fa-w-18 {
+  display: block;
+}
+
+@media (max-width: 725px) {
+  section.cep-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.cep-section div {
+    max-width: 100%;
+    padding: 20px;
+  }
+  section.cep-section div.cep-box1 h2.cep-titulo {
+    font-size: 48px;
+  }
+  section.cep-section div.cep-box1 input.cep-placeholder {
+    font-size: 32px;
+  }
+}
+@media (max-width: 725px) {
+  section.cep-section div.cep-box1 {
+    max-width: 100%;
+  }
+  section.cep-section div.cep-box1 input.cep-placeholder {
+    max-width: 100%;
+  }
+  section.cep-section div.cep-box1 button.buscar-cep {
     max-width: 100%;
   }
 }

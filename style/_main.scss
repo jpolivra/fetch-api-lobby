@@ -26,6 +26,10 @@ header {
       letter-spacing: 0.2em;
       color: #f7df1e;
       font-weight: 400;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }
@@ -48,7 +52,18 @@ i.fa {
     position: relative;
 
     nav {
-      display: none;
+      position: absolute;
+      height: 100vh;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #f7df1e;
+      top: 0;
+      left: -100vw;
+      width: 100%;
+      transition: 0.3s;
     }
 
     nav.ativo {
@@ -108,6 +123,7 @@ main {
       font-family: "Bungee Inline", cursive;
       letter-spacing: 0.1em;
       font-size: 96px;
+
       font-weight: 400;
     }
   }
@@ -131,6 +147,10 @@ main {
       font-size: 36px;
       padding: 10px 20px;
       text-decoration: none;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 }

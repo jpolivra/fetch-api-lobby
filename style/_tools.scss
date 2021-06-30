@@ -8,7 +8,8 @@ section.sec-ferramentas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+
+    //min-height: 100vh;
     h2.ferramentas-titulo {
       font-family: "Bebas Neue", cursive;
       letter-spacing: 0.2em;
@@ -17,6 +18,7 @@ section.sec-ferramentas {
     div.container {
       position: relative;
       //width: 1150px;
+      flex-grow: 1;
       padding: 20px;
       display: flex;
       justify-content: center;
@@ -70,18 +72,22 @@ section.sec-ferramentas {
             font-family: Arial, Helvetica, sans-serif;
             font-weight: 500;
             font-size: 20px;
+            transition: 0.3s;
+          }
+          a:hover {
+            transform: scale(1.1);
           }
         }
       }
       &:hover div.card {
-        filter: blur(20px);
+        //filter: blur(20px);
         transform: scale(0.9);
-        opacity: 0.5;
+        //opacity: 0.5;
       }
       div.card:hover {
-        filter: blur(0px);
+        //filter: blur(0px);
         transform: scale(1.1);
-        opacity: 1;
+        //opacity: 1;
       }
     }
   }
@@ -95,6 +101,13 @@ section.sec-ferramentas {
       }
       div.container {
         max-width: 100%;
+        div.card {
+          div.content {
+            p {
+              font-size: 18px;
+            }
+          }
+        }
       }
     }
   }
