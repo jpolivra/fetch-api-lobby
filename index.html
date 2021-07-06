@@ -100,18 +100,18 @@
     <section id="cepSection" class="cep-section">
       <div class="cep-box1">
         <h2 class="cep-titulo">CEP API</h2>
-        <input type="text" placeholder="INSERIR CEP" class="cep-placeholder" />
-        <button class="buscar-cep">BUSCAR</button>
+        <input type="text" class="cep-placeholder" id="entradaCep"/>
+        <button class="buscar-cep" id="buscador">BUSCAR</button>
       </div>
       <div class="cep-box2">
-        <div class="cep-card">
+        <div class="cep-card ativo" id="tabela">
           <ul>
             <li>
               Rua:
               <span id="rua">Rua Imaculada Conceição</span>
             </li>
             <li>Bairro: <span id="bairro">Piranga</span></li>
-            <li>Bairro: <span id="cidade">Juazeiro</span></li>
+            <li>Localidade: <span id="localidade">Juazeiro</span></li>
             <li>UF: <span id="uf">BA</span></li>
             <li>DDD: <span id="ddd">74</span></li>
           </ul>

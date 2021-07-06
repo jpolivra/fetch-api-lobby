@@ -27,6 +27,7 @@ header {
       color: #f7df1e;
       font-weight: 400;
       transition: 0.3s;
+
       &:hover {
         transform: scale(1.1);
       }
@@ -110,29 +111,35 @@ main {
   padding: 20px;
   padding-bottom: 40px;
   display: flex;
+
   div.main-box1 {
     h1.titulo-main {
       color: #f7df1e;
       font-family: "Bebas Neue", cursive;
       letter-spacing: 0.2em;
-      font-size: 144px;
+      font-size: 104px;
+      line-height: 1.2em;
       font-weight: 400;
     }
+
     h2.subtitulo-main {
       color: #f7df1e;
       font-family: "Bungee Inline", cursive;
       letter-spacing: 0.1em;
       font-size: 96px;
+      line-height: 1.2em;
 
       font-weight: 400;
     }
   }
+
   div.main-box2 {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
+
     a {
       margin: 20px;
       background-color: #f7df1e;
@@ -148,6 +155,7 @@ main {
       padding: 10px 20px;
       text-decoration: none;
       transition: 0.3s;
+
       &:hover {
         transform: scale(1.1);
       }
@@ -160,14 +168,17 @@ main {
 @media (max-width: 900px) {
   main {
     max-width: 100%;
+
     div.main-box1 {
       h1.titulo-main {
         font-size: 96px;
       }
+
       h2.subtitulo-main {
         font-size: 56px;
       }
     }
+
     div.main-box2 {
       max-width: 100%;
     }
@@ -177,12 +188,15 @@ main {
 @media (max-width: 700px) {
   main {
     flex-direction: column;
+
     div.main-box1 {
       text-align: center;
       padding-bottom: 20px;
+
       h1.titulo-main {
         font-size: 66px;
       }
+
       h2.subtitulo-main {
         font-size: 46px;
       }

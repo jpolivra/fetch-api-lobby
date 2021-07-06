@@ -121,7 +121,8 @@ main div.main-box1 h1.titulo-main {
   color: #f7df1e;
   font-family: "Bebas Neue", cursive;
   letter-spacing: 0.2em;
-  font-size: 144px;
+  font-size: 104px;
+  line-height: 1.2em;
   font-weight: 400;
 }
 main div.main-box1 h2.subtitulo-main {
@@ -129,6 +130,7 @@ main div.main-box1 h2.subtitulo-main {
   font-family: "Bungee Inline", cursive;
   letter-spacing: 0.1em;
   font-size: 96px;
+  line-height: 1.2em;
   font-weight: 400;
 }
 main div.main-box2 {
@@ -394,6 +396,9 @@ section.cep-section div.cep-box2 div.cep-card.ativo svg.fa-w-18 {
     font-size: 48px;
   }
   section.cep-section div.cep-box1 input.cep-placeholder {
+    font-size: 32px;
+  }
+  section.cep-section div.cep-box1 button.buscar-cep {
     font-size: 32px;
   }
 }

@@ -3,9 +3,11 @@ section.cep-section {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
+
   div {
     padding: 40px 20px 40px 20px;
   }
+
   div.cep-box1 {
     max-width: 50%;
     display: flex;
@@ -13,12 +15,14 @@ section.cep-section {
     min-height: 50vh;
     align-items: center;
     justify-content: space-around;
+
     h2.cep-titulo {
       color: #f7df1e;
       font-family: "Bebas Neue", cursive;
       font-size: 96px;
       line-height: 1em;
     }
+
     input.cep-placeholder {
       display: block;
       padding: 10px 3px;
@@ -30,6 +34,7 @@ section.cep-section {
       text-align: center;
       margin-bottom: 20px;
     }
+
     button.buscar-cep {
       background: #f7df1e;
       border: none;
@@ -38,12 +43,14 @@ section.cep-section {
       font-family: "Bebas Neue", cursive;
       padding: 20px;
       transition: 0.3s;
+
       &:hover {
         cursor: pointer;
         transform: scale(1.1);
       }
     }
   }
+
   div.cep-box2 {
     display: flex;
     justify-content: center;
@@ -57,29 +64,36 @@ section.cep-section {
       min-height: 30vh;
       justify-content: flex-start;
       align-content: space-around;
+
       ul {
         display: block;
         list-style-type: none;
         font-family: "Bebas Neue", cursive;
         font-size: 22px;
+
         li {
           margin-top: 10px;
         }
+
         span {
           color: #666;
         }
       }
+
       svg.fa-w-18 {
         color: #000;
         max-width: 100px;
         display: none;
       }
+
       &.ativo {
         ul {
           display: none;
         }
+
         justify-content: center;
         align-items: center;
+
         svg.fa-w-18 {
           display: block;
         }
@@ -97,23 +111,33 @@ section.cep-section {
       max-width: 100%;
       padding: 20px;
     }
+
     div.cep-box1 {
       h2.cep-titulo {
         font-size: 48px;
       }
+
       input.cep-placeholder {
         font-size: 32px;
+      }
+
+      button.buscar-cep {
+        font-size: 32px;
+        ;
       }
     }
   }
 }
+
 @media (max-width: 725px) {
   section.cep-section {
     div.cep-box1 {
       max-width: 100%;
+
       input.cep-placeholder {
         max-width: 100%;
       }
+
       button.buscar-cep {
         max-width: 100%;
       }
