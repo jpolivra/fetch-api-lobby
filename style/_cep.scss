@@ -33,6 +33,10 @@ section.cep-section {
       color: #f7df1e;
       text-align: center;
       margin-bottom: 20px;
+
+      &:focus {
+        outline: none;
+      }
     }
 
     button.buscar-cep {
@@ -64,6 +68,11 @@ section.cep-section {
       min-height: 30vh;
       justify-content: flex-start;
       align-content: space-around;
+      transition: 0.5s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
 
       ul {
         display: block;
