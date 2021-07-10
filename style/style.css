@@ -579,5 +579,61 @@ section.chuckSection div.box2 div.textContainer p {
     flex-basis: auto;
   }
 }
+section.about {
+  max-width: 100%;
+  background: #f7df1e;
+}
+section.about div.aboutContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+section.about div.aboutContainer h2.sobreText {
+  font-family: "Bebas Neue", cursive;
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+section.about div.aboutContainer p {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+section.about div.aboutContainer h2.nameText {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  text-align: center;
+}
+section.about div.aboutContainer h2.descriptionText {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+section.about div.aboutContainer img {
+  border-radius: 50%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+section.about div.aboutContainer button.github {
+  margin-top: 30px;
+  font-family: "Bebas Neue", cursive;
+  background: #000;
+  border: none;
+  font-size: 44px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+section.about div.aboutContainer button.github:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style.css.map */
