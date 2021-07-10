@@ -1,9 +1,5 @@
 export default function cepInformation() {
-  
-}
-
-
-const btnBuscador = document.querySelector("#buscador");
+  const btnBuscador = document.querySelector("#buscador");
 const entradaCep = document.querySelector("#entradaCep");
 let valorCep;
 btnBuscador.addEventListener("click", (event) => {
@@ -35,5 +31,9 @@ btnBuscador.addEventListener("click", (event) => {
       tabela.classList.remove("ativo");
     }); 
 });
+}
 
-console.log('test');
+
+
+
+

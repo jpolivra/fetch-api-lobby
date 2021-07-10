@@ -1,7 +1,10 @@
-const texto = document.querySelector("#texto");
-const botao = document.querySelector("#randomize");
-console.log(texto);
+export default function gerarFrase() {
 
+}
+
+const texto = document.querySelector("#chuckText");
+const botao = document.querySelector("#gerador");
+console.log('test')
 function swipeText(data) {
   texto.innerText = data.value;
 }
@@ -15,4 +18,3 @@ function randomQuote() {
 randomQuote();
 
 botao.addEventListener("click", randomQuote);
-("");

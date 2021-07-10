@@ -40,8 +40,8 @@
       <nav id="navBar">
         <a href="#">Home</a>
         <a href="#cepSection">Cep</a>
-        <a href="#">Norris</a>
-        <a href="#">Bitcoin</a>
+        <a href="#chuckSection">Norris</a>
+        <a href="#bitcoinSection">Bitcoin</a>
         <a href="#">Sobre</a>
       </nav>
       <i class="fa fa-bars" class="bassb" id="hamburguerBtn"></i>
@@ -81,7 +81,7 @@
                 partir dessa ferramenta é possível visualizar o preço atual e
                 anterior da moeda.
               </p>
-              <a href="#">Utilizar</a>
+              <a href="#bitcoinSection">Utilizar</a>
             </div>
           </div>
           <div class="card">
@@ -91,7 +91,7 @@
                 Através dessa ferramenta utilizando um API, é possível gerar
                 frases aleatórias do Chuck Norris.
               </p>
-              <a href="#" class="cards-hlinks">Utilizar</a>
+              <a href="#chuckSection" class="cards-hlinks">Utilizar</a>
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="bitcoinSection">
+    <section class="bitcoinSection" id="bitcoinSection">
       <div class="bitcoinContainer">
       <div class="box1">
         <h2 class="bitcoinTitle">Bitcoin API</h2>
@@ -142,12 +142,19 @@
       <div class="box2">
         <div class="infoCard">
           <label for="valorLabel">Valor de Compra:</label>
-          <p>R$ <span>999999.9</span></p>
+          <p>R$ <span id="valorCompra">999999.9</span></p>
           <label for="valorLabel">Valor de Venda:</label>
-          <p>R$ <span>999999.9</span></p>
+          <p>R$ <span id="valorVenda">999999.9</span></p>
         </div>
       </div>
     </div>
+    </section>
+    <section class="chuckSection" id="chuckSection">
+      <div class="box1"><h2>Chuck Norris API</h2>
+      <button class="gerador" id="gerador">GERAR FRASE</button></div>
+      <div class="box2">
+        <div class="textContainer"><p>"<span id="chuckText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique deleniti dignissimos quia?</span>"</p></div>
+      </div>
     </section>
     <script src="./script/main.js" type="module"></script>
   </body>
